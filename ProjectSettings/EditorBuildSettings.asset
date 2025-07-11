@@ -6,8 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/RedGamesJam/Scenes/MainMenuScene.unity
+    guid: cacb9d16df7ab9c45b01dcea3f53f5c3
+  - enabled: 1
+    path: Assets/RedGamesJam/Scenes/TappyMiniGame/TappyMiniGameLobby.unity
+    guid: 7ccc3a453084aad419f63083cc9c1012
+  - enabled: 1
+    path: Assets/RedGamesJam/Scenes/TappyMiniGame/TappyMiniGameScene.unity
+    guid: 25b5e6565251f7145bf5b7fd7acb5379
+  - enabled: 1
+    path: Assets/RedGamesJam/Scenes/OguMiniGame/OguMiniGameLobby.unity
+    guid: b0f0de87b07a41c4b9331f1a23508a76
+  - enabled: 1
+    path: Assets/RedGamesJam/Scenes/OguMiniGame/OguMiniGameScene.unity
+    guid: 616c032e8927e11478a9c5d4a81fa9ba
+  - enabled: 1
+    path: Assets/RedGamesJam/Scenes/BamMiniGame/BamMiniGameLobby.unity
+    guid: 66fa083f8338db24492e7087c9797869
+  - enabled: 1
+    path: Assets/RedGamesJam/Scenes/BamMiniGame/BamMiniGameScene.unity
+    guid: 129e90280fb83c7438138a343ff4eef4
   m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: f48f4b20e3b238e408859d0fdfb05953, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
