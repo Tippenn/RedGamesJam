@@ -4,8 +4,8 @@ public enum ConveyerItem
 {
     Burger,
     Cookies,
-    Soda,
     Coffee,
     Stone,
-    Poo
+    Whistle,
+    Phone
 }

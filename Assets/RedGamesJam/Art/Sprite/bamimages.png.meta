@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 01a729e467b90c4429eb213522bfb7ad
+guid: b8dcf6366b627df44a3d849d99050bbf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 297433339545769327
-    second: Screen Lose Effect_0
+      213: -8311591069369255861
+    second: bamimages_0
+  - first:
+      213: -1677389957030704671
+    second: bamimages_1
+  - first:
+      213: -2007540363448564510
+    second: bamimages_2
+  - first:
+      213: 5249489767367930544
+    second: bamimages_3
+  - first:
+      213: 2210443266332477047
+    second: bamimages_4
+  - first:
+      213: 335285770690940582
+    second: bamimages_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,6 +112,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,40 +150,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screen Lose Effect_0
+      name: bamimages_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 1360
+        width: 800
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f65dbf3eb02b02400800000000000000
-      internalID: 297433339545769327
+      spriteID: e375888d4f847e34697f5692656988a5
+      internalID: -1868912038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamimages_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1360
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1207fd2745590c54e9f9e4e3c646529b
+      internalID: -1945817837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamimages_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1360
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b6d115536ffce488a631c20f04e48b
+      internalID: 1227627289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamimages_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e120aea4f92120498ebaa7cbeb353b6
+      internalID: 1859765481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamimages_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 560
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae9ecf21ff1441439e1eb6d7bf0e9b1
+      internalID: 236354175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamimages_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 560
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c246227c70fe24b904e8e13bd26bcd
+      internalID: -233924134
       vertices: []
       indices: 
       edges: []
@@ -164,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b14ac658b067a0d4faa07135fb53225c
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screen Lose Effect_0: 297433339545769327
+      bamimages_0: -1868912038
+      bamimages_1: -1945817837
+      bamimages_2: 1227627289
+      bamimages_3: 1859765481
+      bamimages_4: 236354175
+      bamimages_5: -233924134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
