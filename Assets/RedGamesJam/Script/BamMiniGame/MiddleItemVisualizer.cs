@@ -36,6 +36,7 @@ public class MiddleItemVisualizer : MonoBehaviour
             if(item.item == conveyerItem)
             {
                 GameObject go = Instantiate(item.itemGameObject,itemParent.transform);
+                
                 items.Add(go);  
                 ItemSlider itemSlider = go.GetComponent<ItemSlider>();
                 itemSlider.parentTransform = itemParent;
@@ -71,10 +72,11 @@ public class MiddleItemVisualizer : MonoBehaviour
         foreach(GameObject go in items)
         {
             ItemSlider itemSlider = go.GetComponent<ItemSlider>();
-
+            go.transform.SetAsLastSibling();
             itemSlider.desiredTransform = conveyorOccupiedPositions[count].position;
             count++;
         }
+        items[0].transform.SetAsLastSibling();
     }
 
 }

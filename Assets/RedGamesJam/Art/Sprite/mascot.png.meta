@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: b121ba02d56fd2c4c87d8d63c721e777
+guid: ba7e182525de83a4f8d6a4e12e82e747
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2402500722948326292
-    second: BAM_0
+      213: -3978659664173842694
+    second: mascot_0
+  - first:
+      213: -2316462028977299531
+    second: mascot_1
+  - first:
+      213: 3792748746676035705
+    second: mascot_2
+  - first:
+      213: -6726116174668759687
+    second: mascot_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +148,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BAM_0
+      name: mascot_0
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1154
-        width: 841
-        height: 816
+        x: 0
+        y: 1360
+        width: 800
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49344f3bda5675120800000000000000
-      internalID: 2402500722948326292
+      spriteID: 9ffa046a1bc71b34d85e0b402c359e03
+      internalID: -36093129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mascot_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1360
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5448329e0c8c7574b9ccba694d411299
+      internalID: 1387514122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mascot_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1360
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715449958a9a86645a8d5adefd2fe53e
+      internalID: -2074376507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mascot_3
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1360
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6ff15d7399ad04a81c003c40111cf0
+      internalID: -615533355
       vertices: []
       indices: 
       edges: []
@@ -164,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6aefcaf73cd0f95458d0d2a0390c68c4
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +249,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BAM_0: 2402500722948326292
+      mascot_0: -36093129
+      mascot_1: 1387514122
+      mascot_2: -2074376507
+      mascot_3: -615533355
+      mascot_4: 1784672743
+      mascot_5: 23382828
+      mascot_6: 1621636754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,7 +5,7 @@ public enum ConveyerItem
     Burger,
     Cookies,
     Coffee,
-    Stone,
+    Camera,
     Whistle,
     Phone
 }

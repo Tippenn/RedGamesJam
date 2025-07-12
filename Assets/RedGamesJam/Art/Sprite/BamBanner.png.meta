@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BamBanner_0: 544230219627281445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
