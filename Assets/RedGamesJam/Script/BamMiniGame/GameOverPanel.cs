@@ -37,7 +37,7 @@ public class GameOverPanel : MonoBehaviour
         {
             scoreSlider.value = bamSceneManager.GetScore()/ GameManager.Instance.levelInfos[bamSceneManager.GetCurrentLevel()].badgeToScore[4].scoreNeeded;
         }
-        rewardAmountText.text = (bamSceneManager.GetScore() / 10000f).ToString();
+        rewardAmountText.text = Mathf.RoundToInt(bamSceneManager.GetScore() / 10000f).ToString();
         scoreBonusText.text = "+" + bamSceneManager.GetScoreBonus().ToString() + "%";
         //if(PlayerPrefs.GetFloat("BamHighScore") < bamSceneManager.GetScore())
         //{

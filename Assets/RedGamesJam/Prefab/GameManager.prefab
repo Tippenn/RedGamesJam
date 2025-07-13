@@ -275,9 +275,10 @@ MonoBehaviour:
   - badge: 4
     badgeImage: {fileID: -1719093223, guid: 223200d84eef5804aa0628c4ba13f481, type: 3}
   levelSelected: 1
-  lastPlayedLevelInfo:
+  bestScores:
     score: 0
     level: 0
+  alreadyLogin: 0
   Tickets: 0
-  Coins: 2000
+  Coins: 0
   mascotUsed: 2

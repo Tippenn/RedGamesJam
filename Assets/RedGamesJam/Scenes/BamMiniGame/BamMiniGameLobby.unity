@@ -8521,31 +8521,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: bestScores.level
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: bestScores.score
-      value: 0
+      value: 10000001
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: levelInfos.Array.data[0].levelCompleted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: levelInfos.Array.data[1].levelCompleted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: levelInfos.Array.data[2].levelCompleted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: levelInfos.Array.data[3].levelCompleted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2590424238829020998, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: levelInfos.Array.data[4].levelCompleted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4606117862524912494, guid: ff80d4c03be45084e87ebeeaefeff2dd, type: 3}
       propertyPath: m_LocalPosition.x

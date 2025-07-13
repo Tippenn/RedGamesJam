@@ -89,7 +89,7 @@ public class BamSceneManager : MonoBehaviour
 
     public void GenerateItem()
     {
-        while(itemMiddle.Count < 9)
+        while(itemMiddle.Count < 8)
         {
             int randomItem = Random.Range(0, itemAllowed.Count);
             itemMiddle.Add(itemAllowed[randomItem]);
