@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1856322933181671927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4606117862524912494}
+  - component: {fileID: 2590424238829020998}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4606117862524912494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856322933181671927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 354.3184, y: 722.0218, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2590424238829020998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856322933181671927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98ea316fb697db439d34c947d6ed7b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mascotLevelInfos:
+  - mascotName: 2
+    benefit:
+    - level: 1
+      cost: 0
+      scoreBonus: 5
+      critRate: 0
+      extraTime: 0
+      textDescription: +5% pts Bonus!
+      unlocked: 1
+    - level: 2
+      cost: 50
+      scoreBonus: 10
+      critRate: 0
+      extraTime: 0
+      textDescription: +10% pts Bonus!
+      unlocked: 0
+    - level: 3
+      cost: 100
+      scoreBonus: 20
+      critRate: 0
+      extraTime: 0
+      textDescription: +20% pts Bonus!
+      unlocked: 0
+    - level: 4
+      cost: 150
+      scoreBonus: 30
+      critRate: 0
+      extraTime: 0
+      textDescription: +30% pts Bonus!
+      unlocked: 0
+    - level: 5
+      cost: 200
+      scoreBonus: 40
+      critRate: 0
+      extraTime: 0
+      textDescription: +40% pts Bonus!
+      unlocked: 0
+    mascotSprite: {fileID: -716201353, guid: f91713022c8da9c45b8b6bee28680588, type: 3}
+    mascotString: Bam
+  - mascotName: 1
+    benefit:
+    - level: 1
+      cost: 300
+      scoreBonus: 15
+      critRate: 0
+      extraTime: 10
+      textDescription: '+15% pts Bonus!
+
+        +10s Extra Time!'
+      unlocked: 0
+    - level: 2
+      cost: 100
+      scoreBonus: 25
+      critRate: 0
+      extraTime: 15
+      textDescription: '+25% pts Bonus!
+
+        +15s Extra Time!'
+      unlocked: 0
+    - level: 3
+      cost: 150
+      scoreBonus: 35
+      critRate: 0
+      extraTime: 20
+      textDescription: '+35% pts Bonus!
+
+        +20s Extra Time!'
+      unlocked: 0
+    - level: 4
+      cost: 200
+      scoreBonus: 45
+      critRate: 0
+      extraTime: 25
+      textDescription: '+45% pts Bonus!
+
+        +25s Extra Time!'
+      unlocked: 0
+    - level: 5
+      cost: 250
+      scoreBonus: 55
+      critRate: 0
+      extraTime: 30
+      textDescription: '+55% pts Bonus!
+
+        +30s Extra Time!'
+      unlocked: 0
+    mascotSprite: {fileID: -2479193, guid: 9bb34e9d2cdd74945b2afe240e022221, type: 3}
+    mascotString: Tappy
+  - mascotName: 0
+    benefit:
+    - level: 1
+      cost: 500
+      scoreBonus: 15
+      critRate: 5
+      extraTime: 5
+      textDescription: '+15% pts Bonus!
+
+        +5s Extra Time!
+
+        +5 Crit
+        Rate!'
+      unlocked: 0
+    - level: 2
+      cost: 150
+      scoreBonus: 25
+      critRate: 15
+      extraTime: 10
+      textDescription: '+25% pts Bonus!
+
+        +10s Extra Time!
+
+        +15 Crit
+        Rate!'
+      unlocked: 0
+    - level: 3
+      cost: 200
+      scoreBonus: 35
+      critRate: 25
+      extraTime: 15
+      textDescription: '+35% pts Bonus!
+
+        +15s Extra Time!
+
+        +25 Crit
+        Rate!'
+      unlocked: 0
+    - level: 4
+      cost: 250
+      scoreBonus: 45
+      critRate: 35
+      extraTime: 20
+      textDescription: '+45% pts Bonus!
+
+        +20s Extra Time!
+
+        +35 Crit
+        Rate!'
+      unlocked: 0
+    - level: 5
+      cost: 300
+      scoreBonus: 55
+      critRate: 45
+      extraTime: 25
+      textDescription: '+45% pts Bonus!
+
+        +20s Extra Time!
+
+        +35 Crit
+        Rate!'
+      unlocked: 0
+    mascotSprite: {fileID: 1387514122, guid: ba7e182525de83a4f8d6a4e12e82e747, type: 3}
+    mascotString: Ogu
+  levelInfos:
+  - level: 0
+    levelCompleted: 0
+    badgeToScore:
+    - badge: 0
+      scoreNeeded: 1000000
+    - badge: 1
+      scoreNeeded: 1500000
+    - badge: 2
+      scoreNeeded: 2000000
+    - badge: 3
+      scoreNeeded: 2500000
+    - badge: 4
+      scoreNeeded: 3000000
+  - level: 1
+    levelCompleted: 0
+    badgeToScore:
+    - badge: 0
+      scoreNeeded: 1000000
+    - badge: 1
+      scoreNeeded: 1500000
+    - badge: 2
+      scoreNeeded: 2000000
+    - badge: 3
+      scoreNeeded: 2500000
+    - badge: 4
+      scoreNeeded: 3000000
+  - level: 2
+    levelCompleted: 0
+    badgeToScore:
+    - badge: 0
+      scoreNeeded: 1000000
+    - badge: 1
+      scoreNeeded: 1500000
+    - badge: 2
+      scoreNeeded: 2000000
+    - badge: 3
+      scoreNeeded: 2500000
+    - badge: 4
+      scoreNeeded: 3000000
+  - level: 3
+    levelCompleted: 0
+    badgeToScore:
+    - badge: 0
+      scoreNeeded: 1000000
+    - badge: 1
+      scoreNeeded: 1500000
+    - badge: 2
+      scoreNeeded: 2000000
+    - badge: 3
+      scoreNeeded: 2500000
+    - badge: 4
+      scoreNeeded: 3000000
+  - level: 4
+    levelCompleted: 0
+    badgeToScore:
+    - badge: 0
+      scoreNeeded: 1000000
+    - badge: 1
+      scoreNeeded: 1500000
+    - badge: 2
+      scoreNeeded: 2000000
+    - badge: 3
+      scoreNeeded: 2500000
+    - badge: 4
+      scoreNeeded: 3000000
+  badgeInfos:
+  - badge: 0
+    badgeImage: {fileID: -156610095, guid: 223200d84eef5804aa0628c4ba13f481, type: 3}
+  - badge: 1
+    badgeImage: {fileID: 101490494, guid: 223200d84eef5804aa0628c4ba13f481, type: 3}
+  - badge: 2
+    badgeImage: {fileID: -2192279, guid: 223200d84eef5804aa0628c4ba13f481, type: 3}
+  - badge: 3
+    badgeImage: {fileID: -607590695, guid: 223200d84eef5804aa0628c4ba13f481, type: 3}
+  - badge: 4
+    badgeImage: {fileID: -1719093223, guid: 223200d84eef5804aa0628c4ba13f481, type: 3}
+  levelSelected: 1
+  lastPlayedLevelInfo:
+    score: 0
+    level: 0
+  Tickets: 0
+  Coins: 2000
+  mascotUsed: 2

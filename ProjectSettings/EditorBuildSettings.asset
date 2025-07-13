@@ -6,20 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/RedGamesJam/Scenes/MainMenuScene.unity
+    path: Assets/RedGamesJam/Scenes/SplashScreen.unity
     guid: cacb9d16df7ab9c45b01dcea3f53f5c3
-  - enabled: 1
-    path: Assets/RedGamesJam/Scenes/TappyMiniGame/TappyMiniGameLobby.unity
-    guid: 7ccc3a453084aad419f63083cc9c1012
-  - enabled: 1
-    path: Assets/RedGamesJam/Scenes/TappyMiniGame/TappyMiniGameScene.unity
-    guid: 25b5e6565251f7145bf5b7fd7acb5379
-  - enabled: 1
-    path: Assets/RedGamesJam/Scenes/OguMiniGame/OguMiniGameLobby.unity
-    guid: b0f0de87b07a41c4b9331f1a23508a76
-  - enabled: 1
-    path: Assets/RedGamesJam/Scenes/OguMiniGame/OguMiniGameScene.unity
-    guid: 616c032e8927e11478a9c5d4a81fa9ba
   - enabled: 1
     path: Assets/RedGamesJam/Scenes/BamMiniGame/BamMiniGameLobby.unity
     guid: 66fa083f8338db24492e7087c9797869

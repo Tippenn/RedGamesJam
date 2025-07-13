@@ -21,7 +21,7 @@ public class CharacterInfoPanel : MonoBehaviour
 
     public void ShowChar()
     {
-        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfo)
+        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfos)
         {
             if (mascotLevelInfo.mascotName == chooseCharacterPanel.GetCharSelected())
             {
@@ -75,7 +75,7 @@ public class CharacterInfoPanel : MonoBehaviour
     #region not used
     public void ShowOgu()
     {
-        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfo)
+        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfos)
         {
             if(mascotLevelInfo.mascotName == MascotName.Ogu)
             {
@@ -111,7 +111,7 @@ public class CharacterInfoPanel : MonoBehaviour
 
     public void ShowBam()
     {
-        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfo)
+        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfos)
         {
             if (mascotLevelInfo.mascotName == MascotName.Bam)
             {
@@ -147,7 +147,7 @@ public class CharacterInfoPanel : MonoBehaviour
 
     public void ShowTappy()
     {
-        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfo)
+        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfos)
         {
             if (mascotLevelInfo.mascotName == MascotName.Tappy)
             {
@@ -184,7 +184,7 @@ public class CharacterInfoPanel : MonoBehaviour
     #endregion
     public void Clicked_Upgrade()
     {
-        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfo)
+        foreach (MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfos)
         {
             if (mascotLevelInfo.mascotName == chooseCharacterPanel.GetCharSelected())
             {

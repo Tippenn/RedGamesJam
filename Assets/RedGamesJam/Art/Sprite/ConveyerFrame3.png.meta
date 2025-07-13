@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ConveyerFrame3_0: -7779153905003579950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

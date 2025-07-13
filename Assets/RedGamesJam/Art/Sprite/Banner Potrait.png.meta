@@ -198,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Banner Potrait_0: -8529181080745155772
+      Banner Potrait_1: 1489119245108645694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

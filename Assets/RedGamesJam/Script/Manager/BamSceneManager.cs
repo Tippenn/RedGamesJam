@@ -25,40 +25,71 @@ public class BamSceneManager : MonoBehaviour
 
     [Header("Score")]
     [SerializeField] private float score;
+    [SerializeField] private float scoreBonus;
     [SerializeField] private int combo;
+
+    [Header("Crit")]
+    [SerializeField] private float CritChance;
 
     [Header("Event")]
     [SerializeField] private bool isInitialized = false;
+    [SerializeField] private bool isGameover = false;
     public UnityEvent onTimerStart;
     public UnityEvent<ConveyerItem> onItemSpawn;
     public UnityEvent onItemSwipe;
     public UnityEvent onLeftSwipe;
     public UnityEvent onRightSwipe;
+    public UnityEvent onCorrectSwipe;
+    public UnityEvent onWrongSwipe;
+    public UnityEvent onCriticalSwipe;
     public UnityEvent onGameOver;
     private void Awake()
     {
+        currentLevel = GameManager.Instance.GetLevelSelected();
         itemLeft = levelInfo[currentLevel].itemLeft;
         itemRight = levelInfo[currentLevel].itemRight;
         itemAllowed = levelInfo[currentLevel].itemAllowed;
-        currentTime = levelInfo[currentLevel].timer;
+        
         maxTime = levelInfo[currentLevel].timer;
+        foreach(MascotLevelInfo mascotLevelInfo in GameManager.Instance.mascotLevelInfos)
+        {
+            if(mascotLevelInfo.mascotName == GameManager.Instance.GetMascotUsed())
+            {
+                foreach(MascotLevelBenefit mascotLevelBenefit in mascotLevelInfo.benefit)
+                {
+                    if (mascotLevelBenefit.unlocked)
+                    {
+                        CritChance = mascotLevelBenefit.critRate;
+                        maxTime += mascotLevelBenefit.extraTime;
+                        scoreBonus = mascotLevelBenefit.scoreBonus;
+                    }
+                }
+            }
+        }
+
+        currentTime = maxTime;
         GenerateItem();
     }
 
+    private void Start()
+    {
+        AudioManager.Instance.ChangeBGM(AudioManager.Instance.inGame);
+    }
     private void Update()
     {
         if (!isInitialized) return;
 
         currentTime -= Time.deltaTime;
-        if(currentTime <= 0)
+        if(currentTime <= 0 && isGameover == false)
         {
+            isGameover = true;
             GameOver();
         }
     }
 
     public void GenerateItem()
     {
-        while(itemMiddle.Count < 6)
+        while(itemMiddle.Count < 9)
         {
             int randomItem = Random.Range(0, itemAllowed.Count);
             itemMiddle.Add(itemAllowed[randomItem]);
@@ -66,8 +97,14 @@ public class BamSceneManager : MonoBehaviour
         }
     }
 
+    public void CalculateScore()
+    {
+        score += (score * scoreBonus / 100f);
+    }
+
     public void GameOver()
     {
+        CalculateScore();
         onGameOver?.Invoke();
     }
 
@@ -79,6 +116,7 @@ public class BamSceneManager : MonoBehaviour
     #region button
     public void Clicked_Left()
     {
+        AudioManager.Instance.PlaySFXOneShot(AudioManager.Instance.tap);
         bool benar = false;
         foreach (ConveyerItem item in itemLeft)
         {
@@ -91,44 +129,54 @@ public class BamSceneManager : MonoBehaviour
         if(benar == true)
         {
             combo++;
+            float addedScore;
             if(combo < 10)
             {
-                score += 20000 * 1f;
+                addedScore = 20000 * 1f;
             }
             else if(combo < 20)
             {
-                score += 20000 * 1.2f;
+                addedScore = 20000 * 1.2f;
             }
             else if (combo < 50)
             {
-                score += 20000 * 1.5f;
+                addedScore = 20000 * 1.5f;
             }
             else if (combo < 100)
             {
-                score += 20000 * 2f;
+                addedScore = 20000 * 2f;
             }
             else if (combo < 100)
             {
-                score += 20000 * 3f;
+                addedScore = 20000 * 3f;
             }
             else if (combo < 150)
             {
-                score += 20000 * 4f;
+                addedScore = 20000 * 4f;
             }
             else if (combo < 200)
             {
-                score += 20000 * 5f;
+                addedScore = 20000 * 5f;
             }
             else
             {
-                score += 20000 * 6f;
+                addedScore = 20000 * 6f;
             }
+
+            if(Random.Range(0, 100) < CritChance)
+            {
+                addedScore *= 2f;
+                onCriticalSwipe?.Invoke();
+            }
+            onCorrectSwipe?.Invoke();
+            score += addedScore;
             Debug.Log("Benar");
         }
         else
-        {
+        {            
             combo = 0;
             currentTime -= 2;
+            onWrongSwipe?.Invoke();
             Debug.Log("Salah");
         }
 
@@ -140,6 +188,8 @@ public class BamSceneManager : MonoBehaviour
 
     public void Clicked_Right()
     {
+        AudioManager.Instance.PlaySFXOneShot(AudioManager.Instance.tap);
+
         bool benar = false;
         foreach (ConveyerItem item in itemRight)
         {
@@ -152,44 +202,54 @@ public class BamSceneManager : MonoBehaviour
         if (benar == true)
         {
             combo++;
+            float addedScore;
             if (combo < 10)
             {
-                score += 20000 * 1f;
+                addedScore = 20000 * 1f;
             }
             else if (combo < 20)
             {
-                score += 20000 * 1.2f;
+                addedScore = 20000 * 1.2f;
             }
             else if (combo < 50)
             {
-                score += 20000 * 1.5f;
+                addedScore = 20000 * 1.5f;
             }
             else if (combo < 100)
             {
-                score += 20000 * 2f;
+                addedScore = 20000 * 2f;
             }
             else if (combo < 100)
             {
-                score += 20000 * 3f;
+                addedScore = 20000 * 3f;
             }
             else if (combo < 150)
             {
-                score += 20000 * 4f;
+                addedScore = 20000 * 4f;
             }
             else if (combo < 200)
             {
-                score += 20000 * 5f;
+                addedScore = 20000 * 5f;
             }
             else
             {
-                score += 20000 * 6f;
+                addedScore = 20000 * 6f;
             }
+
+            if (Random.Range(0, 100) < CritChance)
+            {
+                addedScore *= 2f;
+                onCriticalSwipe?.Invoke();
+            }
+            onCorrectSwipe?.Invoke();
+            score += addedScore;
             Debug.Log("Benar");
         }
         else
         {
             combo = 0;
             currentTime-=2;
+            onWrongSwipe?.Invoke();
             Debug.Log("Salah");
         }
 
@@ -201,11 +261,15 @@ public class BamSceneManager : MonoBehaviour
 
     public void Clicked_Retry()
     {
+        AudioManager.Instance.PlaySFXOneShot(AudioManager.Instance.click);
+
         SceneManager.LoadScene("BamMiniGameScene");
     }
 
     public void Clicked_Next()
     {
+        AudioManager.Instance.PlaySFXOneShot(AudioManager.Instance.click);
+
         SceneManager.LoadScene("BamMiniGameLobby");
     }
     #endregion
@@ -223,6 +287,11 @@ public class BamSceneManager : MonoBehaviour
     public float GetCurrentTime()
     {
         return currentTime;
+    }
+
+    public float GetScoreBonus()
+    {
+        return scoreBonus;
     }
 
     public int GetCombo()
@@ -247,6 +316,11 @@ public class BamSceneManager : MonoBehaviour
     public BamItemData[] GetItemDatas()
     {
         return itemDatas;
+    }
+
+    public int GetCurrentLevel()
+    {
+        return currentLevel;
     }
     #endregion
 }
